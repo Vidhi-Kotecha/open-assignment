@@ -1,0 +1,16 @@
+<nav [class.sticky]='applysticky' class="nav-bar">
+    <div class="flex items-center justify-between">
+        <img src="assets/images/logo.png" alt="app-logo" class="app-logo">
+        <div class="flex justify-center items-center">
+            <ul class="flex justify-around items-center font-semibold font-size-18 font-openSans nav-list">
+                <li><a href="#" i18n>Products</a></li>
+                <li><a href="#" i18n>Solutions</a></li>
+                <li><a href="#" i18n>Pricing</a></li>
+            </ul>
+            <div class="font-openSans flex btn-css justify-center items-center">
+                <app-custom-btn class="py-5" btnText="Login" [btnStyle]="{border: '2px solid var(--purple)', 'background-color': 'transparent'}"></app-custom-btn>
+                <app-custom-btn class="py-5" btnText="Get Started" [btnStyle]="{border: 'none', color: 'white', background: 'linear-gradient(90deg, #9f62c9 0, #663399 100%)'}"></app-custom-btn>
+            </div>
+        </div>
+    </div>
+</nav>

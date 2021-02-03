@@ -1,0 +1,83 @@
+@import '~@angular/material/theming';
+@import './theme-mixins.scss';
+
+@include mat-core();
+
+/* ======== Angular material custom themes ======== */  
+
+$mat-purple: (
+    50: #663399,
+    100: #663399,
+    200: #663399,
+    300: #663399,
+    400: #663399,
+    500: #663399,
+    600: #663399,
+    700: #663399,
+    800: #663399,
+    900: #663399,
+    A100: #663399,
+    A200: #663399,
+    A400: #663399,
+    A700: #663399,
+    contrast: (
+        50: $light-primary-text,
+        100: $light-primary-text,
+        200: $light-primary-text,
+        300: $light-primary-text,
+        400: $light-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $light-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+$mat-dark-purple: (
+    50: #4c2574,
+    100: #4c2574,
+    200: #4c2574,
+    300: #4c2574,
+    400: #4c2574,
+    500: #4c2574,
+    600: #4c2574,
+    700: #4c2574,
+    800: #4c2574,
+    900: #4c2574,
+    A100: #4c2574,
+    A200: #4c2574,
+    A400: #4c2574,
+    A700: #4c2574,
+    contrast: (
+        50: $light-primary-text,
+        100: $light-primary-text,
+        200: $light-primary-text,
+        300: $light-primary-text,
+        400: $light-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $light-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+$theme-primary: mat-palette($mat-purple);
+$theme-accent: mat-palette($mat-dark-purple);
+$theme-warn: mat-palette($mat-red, A700);
+
+$theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+$theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
+
+@include angular-material-theme($theme);
+@include theme-based-configurations($theme)
+

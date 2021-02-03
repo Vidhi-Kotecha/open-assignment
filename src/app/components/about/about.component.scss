@@ -1,0 +1,101 @@
+@import '../../../styles/app-mixins';
+
+.main-container {
+    padding: 120px 60px 60px 60px;
+    @include breakpoint-lt-m {
+        padding: 120px 30px 60px 30px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1300px) {
+        padding: 120px 40px 60px 40px;
+    }
+}
+
+.pad-responsive {
+    padding-top: 100px;
+}
+
+.main-heading {
+    margin-left: 30px;
+    width: 70%;
+    line-height: 1.5;
+    font-size: 40px;
+    @include breakpoint-lt-l {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    @include breakpoint-s {
+        width: 80%;
+    }
+}
+
+.main-img {
+    width: 100%;
+    margin-top: 80px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    @include breakpoint-s {
+        margin-top: 60px;
+    }
+}
+
+.dots-img  {
+    position: absolute;
+    bottom: -30px;
+    right: -100px;
+    z-index: -999;
+}
+
+.divider {
+    height: 5px;
+    border-radius: 50px;
+    background: #222222;
+    width: 236px;
+    margin: 10px 0px 10px 30px;
+    @include breakpoint-lt-l {
+        margin-left: 20px;
+    }
+}
+
+.circle {
+    position: absolute;
+    z-index: -999;
+    right: -200px;
+    top: -340px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    @include breakpoint-lt-l {
+    display: none;
+    }
+}
+
+.blob-small {
+    position: absolute;
+    z-index: -999;
+    top: 100px;
+    left: -150px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+.divide-section {
+    @include breakpoint-lt-l {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.left-section {
+    @include breakpoint-gt-l {
+        padding-right: 20px;
+    }
+}

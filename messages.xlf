@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8689211554413819507" datatype="html">
+        <source>We make it Super Simple</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4533795541921787667" datatype="html">
+        <source>Eligibility Calculator</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4285944149520000289" datatype="html">
+        <source>Repayment Tenure</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6030278493236729471" datatype="html">
+        <source>3 Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4237603135170219364" datatype="html">
+        <source>6 Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8586894519353503643" datatype="html">
+        <source>9 Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2327084146617079940" datatype="html">
+        <source>12 Months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="901063839522231937" datatype="html">
+        <source>Do you have any existing loans?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58076561376538265" datatype="html">
+        <source>EMI of existing loan (optional)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6288565923172271657" datatype="html">
+        <source>Loan Amount</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6356197779989138179" datatype="html">
+        <source>Your EMI will be</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/eligibility-calculator/eligibility-calculator.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2321873706353191569" datatype="html">
+        <source>Boost your business with Open</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-content/main-content.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8742837995251006996" datatype="html">
+        <source>Get your hands on a term loan that’s crafted for your business</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/main-content/main-content.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6707361102856436710" datatype="html">
+        <source>Products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8968634684446616284" datatype="html">
+        <source>Solutions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5080775557941296581" datatype="html">
+        <source>Pricing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/nav-bar/nav-bar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

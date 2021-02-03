@@ -1,0 +1,23 @@
+<div class="relative flex justify-center items-center features-container">
+    <div>
+        <ng-container *ngFor="let feature of featureList1">
+            <app-card [featureDetails]="feature"></app-card>
+        </ng-container>
+    </div>
+    <div>
+        <ng-container *ngFor="let feature of featureList2">
+            <app-card [featureDetails]="feature"></app-card>
+        </ng-container>
+    </div>
+    <div class="side-container">
+        <div>
+            <div class="font-montserrat-medium main-heading" i18n>Boost your business with Open</div>
+            <div class="divider"></div>
+            <div class="font-montserrat side-desc" i18n>Get your hands on a term loan that’s crafted for your business</div>
+            <div class="btn-pos">
+                <app-custom-btn btnText="Get an Opening Account" [btnStyle]="{border: '2px solid var(--purple)', 'background-color': 'transparent'}"></app-custom-btn>
+            </div>
+        </div>
+    </div>
+    <img src="assets/images/sol_wave_bg.svg" alt="sol_wave" class="absolute w-full bg-img">
+</div>

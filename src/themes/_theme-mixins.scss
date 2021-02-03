@@ -1,0 +1,18 @@
+@mixin theme-based-configurations($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+
+    $colorPrimary: mat-color($primary, default);
+    $colorAccent: mat-color($accent, default);
+    $colorWarn: mat-color($warn, default);
+
+    .mat-primary-background {
+        background-color: $colorPrimary;
+    }
+    
+    .mat-primary-text {
+        color: $colorPrimary;
+    }
+}
+

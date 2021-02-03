@@ -1,0 +1,114 @@
+@import '../../../styles/app-mixins';
+
+
+.calc-card {
+    min-width: 240px;
+    padding: 0px;
+    width: 380px;
+    min-height: 500px;
+    background-color: #f7fbfd;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #6a687c1f;
+    @include breakpoint-s {
+        width: auto;
+    }
+}
+
+.form-container {
+    background: white;
+    color: var(--font-light-color);
+    border-radius: 0px 0px 20px 20px;
+}
+
+:host ::ng-deep .mat-select-value-text, :host ::ng-deep .mat-option-text, :host ::ng-deep .mat-input-element, :host ::ng-deep .mat-form-field-label {
+    font-size: 16px;
+    font-family: Montserrat-Medium;
+}
+
+.side-container {
+    width: 220px;
+    min-height: 350px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 10px;
+    color: white;
+    @include breakpoint-s {
+        width: auto;
+    }
+    @media only screen and (max-width: 400px) {
+        border-radius: 20px;
+        margin-top: 20px;
+        min-width: 220px;
+      }
+}
+
+.text {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.dot-img {
+    right: -50px;
+    bottom: -50px;
+    z-index: -999;
+}
+
+.btn-pos {
+    margin-top: 30px;
+}
+
+.small-screen {
+    @media only screen and (max-width: 400px) {
+      flex-wrap: wrap;
+    }
+  }
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar, 
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb, .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: var(--purple);
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+:host ::ng-deep .mat-slide-toggle-thumb-container {
+    width: 14px;
+    top: 2px;
+    left: 2px;
+    height: 14px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    // transform: translateX(16px);
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+    transform: translateX(16px);
+}
+
+:host ::ng-deep .mat-slide-toggle-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: white;
+}
+
+:host ::ng-deep .mat-slide-toggle-bar {
+    width: 34px;
+    height: 18px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+:host ::ng-deep .mat-slide-toggle .mat-slide-toggle-ripple {
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

@@ -1,0 +1,66 @@
+@import '../../../styles/app-mixins';
+
+
+.features-container {
+    padding: 20px 60px;
+  
+    @include breakpoint-lt-m {
+      flex-direction: column;
+      padding: 20px 30px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1300px) {
+      padding: 20px 30px;
+  }
+}
+
+.main-heading {
+    line-height: 1.5;
+    font-size: 40px;
+    @include breakpoint-lt-l {
+      font-size: 30px;
+    }
+}
+
+.divider {
+    height: 5px;
+    border-radius: 50px;
+    background: #707070;
+    width: 120px;
+    margin: 20px 0px;
+}
+
+.side-desc {
+    width: 80%;
+    color: #777777;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.side-container {
+  width: 33%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-end;
+
+  @include breakpoint-lt-m {
+    width: auto;
+    margin-top: 25px;
+    padding: 0 25px; 
+  }
+  @include breakpoint-l {
+    padding: 0 20px;
+  }
+}
+
+.btn-pos {
+  margin-top: 60px;
+}
+
+.bg-img {
+  bottom: -3%;
+  right: 0;
+  left:0;
+  z-index: -999;
+}

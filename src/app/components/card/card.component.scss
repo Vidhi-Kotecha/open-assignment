@@ -1,0 +1,37 @@
+@import '../../../styles/app-mixins';
+
+
+.card-container {
+    max-width: 270px;
+    // font-size: 15px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px #2321321f;
+
+    @include breakpoint-lt-m {
+        margin: 30px 0px;
+    }
+
+    @include breakpoint-l {
+        margin: 15px 10px;
+    }
+}
+
+.card-container:hover {
+    background-color: #7d46b4;
+    opacity: 0.5;
+    box-shadow: none;
+    color: white;
+    .card-desc {
+      color:white;
+    }
+}
+
+.card-image {
+    height: 75px;
+    width: 75px;
+}
+  
+.card-desc {
+    color: #999999
+}

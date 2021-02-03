@@ -1,0 +1,5 @@
+<mat-card class="flex flex-col justify-between card-container" *ngIf="featureDetails">
+    <img class="card-image" [src]="featureDetails.imageUrl" [alt]="featureDetails.title"/>
+    <div class="font-montserrat-semibold py-10">{{featureDetails.title}}</div>
+    <p class="font-montserrat card-desc">{{featureDetails.description}}</p>
+</mat-card>

@@ -1,0 +1,42 @@
+<div class="flex items-center justify-center font-montserrat-medium relative small-screen">
+    <mat-card class="calc-card">
+        <h3 class="font-openSansLight ls-custom text-center p-10 mb-0 font-bold" i18n>Eligibility Calculator</h3>
+        <form class="form-container p-24 font-montserrat-medium" [formGroup]="calculatorForm"> 
+            <app-range [minRange]="100000" [maxRange]="300000" [title]="'Monthy Income'" [showRange]="true"></app-range>
+            <app-range [minRange]="10000" [maxRange]="100000" [title]="'Monthy Expense'"></app-range>
+            <div class="flex flex-col pt-10">
+                <label for="tenure" class="font-light font-size-12" id="label-tenure" i18n>Repayment Tenure</label>
+                <mat-form-field>
+                    <mat-select formControlName="tenure" role="listbox" id="tenure" aria-labelledby="label-tenure" > 
+                        <mat-option value="3 Months" i18n role="option">3 Months</mat-option>
+                        <mat-option value="6 Months" i18n role="option">6 Months</mat-option>
+                        <mat-option value="9 Months" i18n role="option">9 Months</mat-option>
+                        <mat-option value="12 Months" i18n role="option">12 Months</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="flex justify-between items-center pb-10">
+                <label for="loans" class="font-light font-size-12 pr-10" id="label-loans" i18n>Do you have any existing loans?</label>
+                <mat-slide-toggle formControlName="loans" id="loans" aria-labelledby="label-loans"></mat-slide-toggle>                
+            </div>
+            <div class="flex flex-col pt-10">
+                <label for="emi" class="font-light font-size-12" id="label-emi" i18n>EMI of existing loan (optional)</label>
+                <mat-form-field [floatLabel]="'never'" >
+                    <input matInput aria-labelledby="label-emi" formControlName="emi" type="number" aria-placeholder="&#8377; 15000" placeholder="&#8377; {{15000 | number:'1.0'}}" class="w-full" autocomplete="off"/>
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+    <div class="flex items-center justify-center side-container mat-primary-background text-center">
+        <div>
+            <div class="text font-montserrat" i18n>Loan Amount</div>
+            <p class="font-size-20 font-montserrat-semibold">&#8377; {{100000 | number:'1.0'}}</p>
+            <div class="text font-montserrat" i18n>Your EMI will be</div>
+            <p class="font-size-20 font-montserrat-semibold">&#8377; {{15000 | number:'1.0'}}</p>
+            <div class="btn-pos">
+                <app-custom-btn btnText="Get Money" [btnStyle]="{border: 'none', background: 'white'}"></app-custom-btn>
+            </div>
+        </div>
+    </div>
+    <img class="absolute dot-img" alt="dot-img" src="assets/images/accounting_dots.svg"/>
+</div>

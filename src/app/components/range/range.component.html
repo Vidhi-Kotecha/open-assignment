@@ -1,0 +1,15 @@
+<div class="w-full">
+    <div class="font-size-12 font-light title font-montserrat-medium">
+        {{title}}
+    </div>
+    <div class="sel-value font-montserrat-medium pt-10 font-bold m-0">
+        &#8377; {{selectedValue | number:'1.0'}}
+    </div>
+    <div class="custom-slider" [ngClass]="{'pb-10' : !showRange}">
+        <mat-slider [attr.aria-label]="title" class="p-0" (input)="selectedValue = $event.value || 0"  [min]="minRange" [max]="maxRange" [value]="selectedValue" class="w-full"></mat-slider>
+    </div>
+    <div *ngIf="showRange" class="flex justify-between font-size-12 pb-10 font-montserrat-medium show-range">
+        <div>&#8377; {{minRange | number:'1.0'}}</div>
+        <div>&#8377; {{maxRange | number:'1.0'}}</div>
+    </div>
+</div>
