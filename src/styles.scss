@@ -71,6 +71,10 @@ body {
     overflow: hidden;
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+
 .w-full {
     width: 100% !important;
 }

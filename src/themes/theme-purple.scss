@@ -76,7 +76,6 @@ $theme-accent: mat-palette($mat-dark-purple);
 $theme-warn: mat-palette($mat-red, A700);
 
 $theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
-$theme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 
 @include angular-material-theme($theme);
 @include theme-based-configurations($theme)
