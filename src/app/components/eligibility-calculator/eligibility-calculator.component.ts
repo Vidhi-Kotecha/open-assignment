@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { Component, OnInit } from '@angular/core'
+import { FormControl, FormGroup } from '@angular/forms'
 
 @Component({
   selector: 'app-eligibility-calculator',
   templateUrl: './eligibility-calculator.component.html',
-  styleUrls: ['./eligibility-calculator.component.scss']
+  styleUrls: ['./eligibility-calculator.component.scss'],
 })
 export class EligibilityCalculatorComponent implements OnInit {
   calculatorForm!: FormGroup
@@ -14,7 +14,7 @@ export class EligibilityCalculatorComponent implements OnInit {
     this.calculatorForm = new FormGroup({
       tenure: new FormControl('6 Months'),
       loans: new FormControl(true),
-      emi: new FormControl(null)
+      emi: new FormControl(null),
     })
   }
 

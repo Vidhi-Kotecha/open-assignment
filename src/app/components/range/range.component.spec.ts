@@ -1,25 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { RangeComponent } from './range.component';
+import { RangeComponent } from './range.component'
 
 describe('RangeComponent', () => {
-  let component: RangeComponent;
-  let fixture: ComponentFixture<RangeComponent>;
+  let component: RangeComponent
+  let fixture: ComponentFixture<RangeComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RangeComponent ]
+      declarations: [ RangeComponent ],
     })
-    .compileComponents();
-  });
+    .compileComponents()
+  })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RangeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(RangeComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -1,25 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { EligibilityCalculatorComponent } from './eligibility-calculator.component';
+import { EligibilityCalculatorComponent } from './eligibility-calculator.component'
 
 describe('EligibilityCalculatorComponent', () => {
-  let component: EligibilityCalculatorComponent;
-  let fixture: ComponentFixture<EligibilityCalculatorComponent>;
+  let component: EligibilityCalculatorComponent
+  let fixture: ComponentFixture<EligibilityCalculatorComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EligibilityCalculatorComponent ]
+      declarations: [ EligibilityCalculatorComponent ],
     })
-    .compileComponents();
-  });
+    .compileComponents()
+  })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EligibilityCalculatorComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(EligibilityCalculatorComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
