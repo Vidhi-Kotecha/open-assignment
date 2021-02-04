@@ -1,7 +1,8 @@
 #OpenAssignment
 
-This project is created using the following:
+
 ```
+This project is created using the following:
 1) Angular 11
 2) TypeScript
 3) HTML
