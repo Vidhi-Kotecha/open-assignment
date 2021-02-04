@@ -1,9 +1,20 @@
-# OpenAssignment
+#OpenAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+This project is created using the following:
+```
+1) Angular 11
+2) TypeScript
+3) HTML
+4) CSS
+5) Angular Material - UI component library for Angular
+```
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#How to run the code
+
+```
+npm install
+ng serve
+```
 
 
