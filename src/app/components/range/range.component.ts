@@ -7,11 +7,11 @@ import { Component, Input, OnInit } from '@angular/core'
 })
 export class RangeComponent implements OnInit {
 
-  @Input() minRange = 0
-  @Input() maxRange = 0
-  @Input() showRange =  false
-  @Input() title = ''
-  selectedValue = 0
+  @Input() minRange: number = 0
+  @Input() maxRange: number = 0
+  @Input() showRange: boolean =  false
+  @Input() title: string = ''
+  selectedValue: number = 0
   constructor() { }
 
   ngOnInit() {

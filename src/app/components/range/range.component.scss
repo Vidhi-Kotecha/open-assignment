@@ -27,7 +27,7 @@
 
 :host ::ng-deep .mat-slider-thumb {
     box-shadow: 0 0 0 9px #fff, 0 0 5px 8px #222;
-    transform: scale(0.5);
+    transform: scale(0.5) !important;
     
 }
 

@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core'
   styleUrls: ['./custom-btn.component.scss'],
 })
 export class CustomBtnComponent implements OnInit {
-  @Input() btnText = ''
-  @Input() btnStyle: any
+  @Input() btnText: string = ''
+  @Input() btnStyle: { [key:string]: string } = {}
   constructor() { }
 
   ngOnInit() {

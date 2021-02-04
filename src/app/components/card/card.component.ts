@@ -10,7 +10,7 @@ export class CardComponent implements OnInit {
 @Input() featureDetails!: IFeature
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

@@ -3,15 +3,12 @@
 
 .card-container {
     max-width: 270px;
-    // font-size: 15px;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0px 0px 30px #2321321f;
-
     @include breakpoint-lt-m {
         margin: 30px 0px;
     }
-
     @include breakpoint-l {
         margin: 15px 10px;
     }
